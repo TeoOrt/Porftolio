@@ -1,0 +1,292 @@
+
+
+html{scroll-behavior: smooth;}
+
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #B1C1C0;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+
+
+.NavBar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    /* background-image: url("../images/circuit.jpeg"); */
+
+}
+
+
+
+
+.NavBar li{
+    margin: 0 20px;
+    background-color: inherit;
+}
+.NavBar ul{
+    display: flex;
+    align-items: center;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+
+.NavBar li a{
+    padding: 3px 3px;
+    color: white;
+    font-weight:  700;
+    font-size:  25px;
+    text-decoration: none;
+    background-color: inherit;
+}
+
+.NavBar li a:hover{
+    color: red;
+    /* background-color: #8AA29E; */
+}
+
+.LandingPage {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 500px 0 ;
+    background-image: url("../images/quantum.jpg");
+ 
+    background-size: cover;
+  }
+  .LandingPage h1 {
+    font-weight: 900;
+    font-size: 5rem;
+    margin-bottom: 0;
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  .LandingPage h2 {
+    font-weight: 750;
+    font-size: 3rem;
+    background-color: transparent;
+    margin-top: 0;
+    color: #fff;
+
+}
+  
+
+
+.About{
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    
+    background-color: #D2E59E;
+    overflow:hidden;
+    background-size:cover ;
+
+}
+
+.About h1{
+    font-weight: 900;
+    font-size: 2rem;
+    background-color: inherit;
+    margin-left: 50px;
+}
+
+.About-Container{
+ background-color: inherit;
+    padding-top: 150px;
+    margin-right: 250px;
+    padding: 150px 0;
+}
+.About h2{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 33px;
+    background-color: inherit;
+}
+
+.About p{
+    background-color: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    
+}
+
+.About img{
+    flex: 0 0 200px;
+    width: 50%;
+    float: left;
+    margin: 1rem;
+    border-radius: 50px;
+
+    
+}
+
+    
+    /*change the number below to scale to the appropriate size*/ 
+
+
+.Skills{
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 500px 50px;
+    display: flex;
+    background-color: white;
+}
+
+.Skills-list{
+    background-color: white;
+    display: flex;
+    flex-direction: column; /* Display flex items in column */
+    align-items: center; /* Center flex items vertically */
+}
+
+.Skills h1{
+    background-color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    padding-bottom: 50px;
+}
+
+.Skills ul{
+    background-color: white;
+    list-style: none;
+}
+
+.Skills li{
+    background-color: white;
+    font-size: 1rem;
+    padding: 0 80px; /* Add horizontal padding to create space between columns */
+}
+
+.Skills li img{
+    background-color: white;
+    height: 250px;
+    width: 250px;
+    border-radius: 30px;
+    transition: all 0.2s ease-in-out; /* add a transition effect for a smoother animation */
+
+}
+
+.Skills img:hover { 
+    transform: scale(1.1); /* increase the size of the image when hovered over */
+    cursor: pointer; /* change the cursor to a pointer to indicate that it's clickable */
+  
+}
+
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0; /* Add margin to create space between rows */
+}
+
+.skills-images{
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allow images to wrap to a new row if needed */
+    justify-content: center; /* Center the images horizontally */
+}
+
+
+
+
+
+.Contact{
+    height: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 500px 50px;
+}
+
+
+
+
+/* NavBar Sticky  */
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+
+/* Projects Section */
+
+.Projects{
+    height:100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding:  50px;
+    display: flex;
+}
+
+
+.Projects ul{
+    list-style-type: none;
+    padding: 33px 33%;
+    margin: 0;
+    text-align: center;
+}
+
+.Projects ul::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    transform: rotate(45deg);
+  }
+
+
+.Projects ul li{
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+.Projects h1{
+    font-weight: 750;
+    font-size: 54px;
+    margin-bottom: 33px;
+}
+
+.Projects h2{
+    font-weight: 550;
+    font-size: 45px;
+    margin-bottom: 33px;
+}
