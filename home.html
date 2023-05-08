@@ -1,150 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Portfolio</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <nav>
-    <div class="NavBar">
+      <div class="NavBar">
+        <ul>
+          <li>
+            <a href="#About">About</a>
+          </li>
+          <li>
+            <a href="#Skills">Skills</a>
+          </li>
 
-        <ul >
-            <li>
-                <a href="#About">About</a>
-            </li>
-            <li>
-                <a href="#Skills">Skills</a>
-            </li>
-        
-            <li><a href="#Projects">
-        Projects</a>
-            </li>
-            <li>
-                <a href="#Contact">    
-                Contact </a>
-            </li>
+          <li><a href="#Projects"> Projects</a></li>
+          <li>
+            <a href="#Contact"> Contact </a>
+          </li>
         </ul>
-</div>
-<script src="./js/index.js">
-    window.onscroll = sticky_navbar();
-
-</script>
-</nav>
+      </div>
+      <script src="./js/index.js">
+        window.onscroll = sticky_navbar();
+      </script>
+    </nav>
 
     <div class="LandingPage">
-        <h1> Mateo Ortega</h1>
-        <h2> Software Test Engineer</h2>
-        <!-- Script, but going to put Test Engineer for now -->
+      <h1>Mateo Ortega</h1>
+      <h2>Software Test Engineer</h2>
+      <!-- Script, but going to put Test Engineer for now -->
     </div>
 
-
-
     <div class="About" id="About">
-        <h1>About</h1>
+      <h1>About</h1>
 
-        <div class="About-Container">
-
-        <img src="images/about.jpg" alt="Mateo Picture">
+      <div class="About-Container">
+        <img src="images/about.jpg" alt="Mateo Picture" />
         <h2>Hi I am Mateo Ortega</h2>
-        <p>I am a recent graduate of the Electrical & Computer Engineering program at the University of Texas at El Paso (UTEP). During my studies, I developed a strong interest in both hardware and software engineering. I enjoy working on complex projects that require expertise in both areas.
-
-            Last year, I had the opportunity to intern at IBM as a Hardware Product Engineer. This experience helped me gain valuable skills in designing and testing hardware components. I also got a chance to work on exciting projects involving software-hardware interaction.
-            
-            My passion, however, lies in programming GPUs. In my free time, I like to explore new books and exercise routines that help me stay healthy and motivated.
+        <p>
+          I am a recent graduate of the Electrical & Computer Engineering
+          program at the University of Texas at El Paso (UTEP). During my
+          studies, I developed a strong interest in both hardware and software
+          engineering. I enjoy working on complex projects that require
+          expertise in both areas. Last year, I had the opportunity to intern at
+          IBM as a Hardware Product Engineer. This experience helped me gain
+          valuable skills in designing and testing hardware components. I also
+          got a chance to work on exciting projects involving software-hardware
+          interaction. My passion, however, lies in programming GPUs. In my free
+          time, I like to explore new books and exercise routines that help me
+          stay healthy and motivated.
         </p>
-          <p>  Thank you for visiting my portfolio website. If you have any questions or would like to learn more about my work, please don't hesitate to get in touch!</p>
-        </div>
-    
-        </div>
-
+        <p>
+          Thank you for visiting my portfolio website. If you have any questions
+          or would like to learn more about my work, please don't hesitate to
+          get in touch!
+        </p>
+      </div>
+    </div>
 
     <div class="Skills" id="Skills">
+      <h1 class="Skills-Title">Skills</h1>
 
-        <h1 class="Skills-Title">Skills</h1>
+      <ul class="Skills-list">
+        <li class="skill-title">
+          <h1>Hardware</h1>
 
-        <ul class="Skills-list">
-            <li class="skill-title">
-                <h1>Hardware</h1>
+          <ul class="skills-images">
+            <li><img src="images/verilog-logo.svg" alt="Verilog" /></li>
+            <li><img src="images/fusion.png" alt="Fusion 360 " /></li>
+            <li><img src="images/matlab.jpg" alt="Matlab" /></li>
+            <li><img src="images/vlsi.jpg" alt="VLSI" /></li>
+          </ul>
+        </li>
+        <li class="skill-title">
+          <h1>Software</h1>
+        </li>
 
-                <ul class="skills-images">
-                    <li><img src="images/verilog-logo.svg" alt = "Verilog"/></li>
-                    <li><img src="images/fusion.png" alt = "Fusion 360 "/></li>
-                    <li><img src="images/matlab.jpg" alt = "Matlab"/></li>
-                    <li><img src="images/vlsi.jpg" alt = "VLSI"/></li>
-                </ul>
-            </li>
-            <li class="skill-title">
+        <ul class="skills-images">
+          <li><img src="images/py.png" alt="Python" /></li>
+          <li><img src="images/c.png" alt="C" /></li>
+          <li><img src="images/cpp.png" alt="C++" /></li>
+          <li><img src="images/rust.png" alt="Rust " /></li>
+          <li><img src="images/js.png" alt="Javascript" /></li>
+        </ul>
+        <li class="skill-title">
+          <h1>Tools</h1>
 
-
-                <h1>Software</h1>
-            </li>
-
-            <ul class="skills-images">
-                <li><img src="images/py.png" alt = "Python"/></li>
-                <li><img src="images/c.png" alt = "C"/></li>
-                <li><img src="images/cpp.png" alt = "C++"/></li>
-                <li><img src="images/rust.png" alt = "Rust "/></li>
-                <li><img src="images/js.png" alt = "Javascript"/></li>
-            </ul>
-            <li class="skill-title">
-
-                <h1>Tools</h1>
-
-<!-- 
+          <!-- 
     In skills we want to show how we have used them before,
     So I will present links to examples, or explain the technology
     if it's not possible
 
                  -->
-<ul class="skills-images">
-                    <li><img src="images/docker.png" alt = "Docker"/></li>
-                    <li><img src="images/qt.png" alt = "QT"/></li>
-                    <li><img src="images/rhel.png" alt = "RedHat"/></li>
-                    <li><img src="images/git.png" alt = "GIT"/></li>
-                    <li><img src="images/sale.png" alt = "Salesforce"/></li>
-                </ul>
-            </li>
-        </ul>
+          <ul class="skills-images">
+            <li><img src="images/docker.png" alt="Docker" /></li>
+            <li><img src="images/qt.png" alt="QT" /></li>
+            <li><img src="images/rhel.png" alt="RedHat" /></li>
+            <li><img src="images/git.png" alt="GIT" /></li>
+            <li><img src="images/sale.png" alt="Salesforce" /></li>
+          </ul>
+        </li>
+      </ul>
     </div>
 
-   
-    <div class="Projects" id = "Projects">
+    <div class="Projects" id="Projects">
+      <h1 class="Projects-Title">Projects</h1>
 
-        <h1 class="Projects-Title">Projects</h1>
+      <h2>Completed Projects</h2>
+      <ul class="Completed">
+        <li>
+          <a>
+            <img
+              src="images/ev-grid.png"
+              alt="Electric Grid to Vehicle Technology"
+            />
+            <p>Electric-Grid To Vehicle Technology</p>
+          </a>
+        </li>
+        <li>
+          <a>
+            <img src="images/aoa.jpeg" />
+            <p>Customer Engineer Training</p>
+          </a>
+        </li>
+        <li>
+          <a>
+            <img src="images/aoa.jpeg" />
+            <p>Creating Service to Analyze Customer Data</p>
+          </a>
+        </li>
+        <li>
+          <a>
+            <img src="images/aoa.jpeg" />
+            <p>RISC Processesor</p>
+          </a>
+        </li>
+      </ul>
 
-        <h2>Completed Projects</h2>
-        <ul class="Completed">
-            <li>Electric-Grid To Vehicle Technology</li>
-            <li>Customer Engineer Training</li>
-            <li>Creating Service to Analyze Customer Data</li>
-            <li>RISC Processesor</li>
-        </ul>
-
-        <h2>Ongoing Projects</h2>
-        <ul class = "Ongoing">
-            <li>Creating Portfolio</li>
-            <li>AQO Balloons e-Commerce website</li>
-            <li>AQO Balloons AR App</li>
-            <li>GPU for RISCV architecuture</li>
-        </ul>
-    </div> 
-
-
-    <div  class="Contact" id="Contact">
-        <h1>Contact</h1>
-        <h2>Thank you, for visiting website, leave a like for a surprise</h2>
-        
-
-        <ul class="ContanctLinks">
-             <li><a href="https://www.linkedin.com/in/mateoort/">linkedin </a></li>
-             <li><a href="https://github.com/TeoOrt?tab=repositories">GitHub</a></li>
-             <li><a href="http:localhost:3030/portfolio-api/get_number">Phone Number(API Test)</a></li>
-             <li>Phone Number</li>
-        </ul>
+      <h2>Ongoing Projects</h2>
+      <ul class="Ongoing">
+        <li><p>Creating Portfolio</p></li>
+        <li><p>AQO Balloons e-Commerce website</p></li>
+        <li><p>AQO Balloons AR App</p></li>
+        <li><p>GPU for RISCV architecuture</p></li>
+      </ul>
     </div>
-</body>
+
+    <div class="Contact" id="Contact">
+      <h1>Contact</h1>
+      <h2>Thank you, for visiting website, leave a like for a surprise</h2>
+
+      <ul class="ContanctLinks">
+        <li><a href="https://www.linkedin.com/in/mateoort/">linkedin </a></li>
+        <li><a href="https://github.com/TeoOrt?tab=repositories">GitHub</a></li>
+        <li>
+          <a href="http:localhost:3030/portfolio-api/get_number"
+            >Phone Number(API Test)</a
+          >
+        </li>
+        <li>Phone Number</li>
+      </ul>
+    </div>
+  </body>
 </html>

@@ -254,31 +254,6 @@ html{scroll-behavior: smooth;}
     display: flex;
 }
 
-
-.Projects ul{
-    list-style-type: none;
-    padding: 33px 33%;
-    margin: 0;
-    text-align: center;
-}
-
-.Projects ul::before {
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin-right: 10px;
-    border-radius: 50%;
-    background-color: #000;
-    transform: rotate(45deg);
-  }
-
-
-.Projects ul li{
-    display: inline-block;
-    margin: 10px;
-    text-align: center;
-}
 .Projects h1{
     font-weight: 750;
     font-size: 54px;
@@ -290,3 +265,36 @@ html{scroll-behavior: smooth;}
     font-size: 45px;
     margin-bottom: 33px;
 }
+
+
+.Completed{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Completed li img{
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.Completed li p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
