@@ -5,10 +5,11 @@ html{scroll-behavior: smooth;}
 *{
     padding: 0;
     margin: 0;
-    background-color: #B1C1C0;
+    background-color:#02010A;
     font-family: sans-serif;
     font-weight: 500;
     font-size: 16px;
+    color: #fff;
 }
 
 
@@ -47,7 +48,7 @@ html{scroll-behavior: smooth;}
 
 .NavBar li a{
     padding: 3px 3px;
-    color: white;
+    color: #fff;
     font-weight:  700;
     font-size:  25px;
     text-decoration: none;
@@ -67,12 +68,8 @@ html{scroll-behavior: smooth;}
     align-items: center;
     text-align: center;
     padding: 35vh 0 ;
-    background-image: url("../images/utep-miners.jpg");
- 
+    background-image: url("../images/chip.jpg"); 
     background-size: cover;
-    backdrop-filter: blur(200px);
-    -webkit-backdrop-filter: blur(5px); /* For Safari */
-  
   }
 
 
@@ -81,7 +78,7 @@ html{scroll-behavior: smooth;}
   }
 
   .LandingPage {
-    transition: opacity 0.5s ease;
+    transition: opacity 1s ease;
     opacity: 1;
   }
   
@@ -93,7 +90,7 @@ html{scroll-behavior: smooth;}
   .LandingPage h1 {
     font-weight: 900;
     font-size: 5rem;
-    color: #000;
+    color: #fff;
 
     
     /* transform: translate(-50%, -50%); */
@@ -106,7 +103,7 @@ html{scroll-behavior: smooth;}
   .LandingPage h2 {
     font-weight: 750;
     font-size: 3rem;
-    color: #000;
+    color: #fff;
     padding: 25px 10px;
     background-color: transparent;
     /* transform: translate(-50%, -50%); */
@@ -124,11 +121,13 @@ html{scroll-behavior: smooth;}
     display: flex;
     flex-direction: row;
     
-    background-color: #D2E59E;
     background-size:cover ;
-
+    
 }
 
+/* background-color: #D2E59E; I like this color
+    keep it in mind
+*/
 .About h1{
     font-weight: 900;
     font-size: 2rem;
@@ -175,32 +174,32 @@ html{scroll-behavior: smooth;}
     height: 100%;
     text-align: center;
     justify-content: center;
-    padding: 500px 50px;
+    padding: 100px 50px;
     display: flex;
-    background-color: white;
+    background-color: #04052E;
 }
 
 .Skills-list{
-    background-color: white;
+    background-color: #04052E;
     display: flex;
     flex-direction: column; /* Display flex items in column */
     align-items: center; /* Center flex items vertically */
 }
 
 .Skills h1{
-    background-color: white;
+    background-color: inherit;
     font-size: 2rem;
     font-weight: 900;
     padding-bottom: 50px;
 }
 
 .Skills ul{
-    background-color: white;
+    background-color: inherit;
     list-style: none;
 }
 
 .Skills li{
-    background-color: white;
+    background-color: inherit;
     font-size: 1rem;
     padding: 0 80px; /* Add horizontal padding to create space between columns */
 }
@@ -241,14 +240,6 @@ html{scroll-behavior: smooth;}
 
 
 
-.Contact{
-    height: 100%;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    padding: 500px 50px;
-}
-
 
 
 
@@ -273,22 +264,27 @@ html{scroll-behavior: smooth;}
 /* Projects Section */
 
 .Projects{
+    background-color: #140152;
     height:100%;
     text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding:  50px;
+    padding: 100px 100px;
     display: flex;
 }
 
 .Projects h1{
+    background-color: inherit;
     font-weight: 750;
     font-size: 54px;
     margin-bottom: 33px;
+    padding-bottom: 200px;
 }
 
 .Projects h2{
+    background-color: inherit;
+    
     font-weight: 550;
     font-size: 45px;
     margin-bottom: 33px;
@@ -297,31 +293,41 @@ html{scroll-behavior: smooth;}
 
 /* Apply grid layout to the 'Completed' list */
 .Completed {
+    background-color: inherit;
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 50px;
-  }
-  
-  .Completed li {
+}
+
+.Completed li {
+    background-color: inherit;
+    
     list-style: none;
     text-align: center;
     position: relative;
-  }
-  .Completed li img {
+}
+.Completed li img {
+    background-color: inherit;
+    
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
     filter: none;
     border-radius: 10px;
     transition: filter 0.1s ease;
-  }
-  
-  .Completed li img:hover {
+}
+
+.Completed li img:hover {
     filter: blur(5px); /* Adjust the value to control the intensity of the blur effect */
-  }
-  
-  
-  .Completed li p {
+    background-color: inherit;
+    
+}
+
+
+.Completed li p {
+    background-color: inherit;
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -334,4 +340,17 @@ html{scroll-behavior: smooth;}
     padding: 10px;
     width: 80%;
     max-width: 100%;
-  }
+}
+
+
+
+
+.Contact{
+    height: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45vh 50px;
+    background-color: #22007C ;
+
+}
