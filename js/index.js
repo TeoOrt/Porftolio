@@ -47,5 +47,5 @@ const sticky_navbar = () => {
     currentImageIndex = (currentImageIndex + 1) % images.length;
   }
   
-  setInterval(rotateBackgroundImage, 1000);
+  setInterval(rotateBackgroundImage, 10000);
   
