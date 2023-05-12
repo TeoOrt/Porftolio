@@ -14,11 +14,15 @@ To use this project locally, follow these steps:
 
 1. Clone the repository:
 
-git clone <repository_url>
+```
+git clone git@github.com:TeoOrt/mateo-ortega-portfolio.github.io.git
+```
 
 2. Navigate to the project directory:
 
+```
 cd Porfolio
+```
 
 3. Modify the files:
 
