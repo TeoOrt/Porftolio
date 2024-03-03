@@ -2,265 +2,6 @@
 
 html{scroll-behavior: smooth;}
 
-*{
-    padding: 0;
-    margin: 0;
-    background-color:#02010A;
-    font-family: sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #fff;
-}
-
-
-
-
-.NavBar{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 999; /* Set a higher value for z-index */
-    /* background-image: url("../images/circuit.jpeg"); */
-
-}
-
-
-
-
-.NavBar li{
-    margin: 0 20px;
-    /* background-color: inherit; */
-}
-.NavBar ul{
-    display: flex;
-    align-items: center;
-    list-style: none; 
-    margin: 0;
-    padding: 0;
-    /* background-color: transparent; */
-}
-
-
-.NavBar li a{
-    padding: 3px 3px;
-    color: #fff;
-    font-weight:  700;
-    font-size:  25px;
-    text-decoration: none;
-    /* background-color: inherit; */
-}
-
-.NavBar li a:hover{
-    color: red;
-    /* background-color: #8AA29E; */
-}
-
-.LandingPage {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 45vh 0 ;
-    background-image: url("../images/chip.jpg"); 
-    background-size: cover;
-  }
-
-
-  .LandingPage {
-    transition: background-image 0.5s ease;
-  }
-
-  .LandingPage {
-    transition: opacity 1s ease;
-    opacity: 1;
-  }
-  
-  .LandingPage.fade-out {
-    opacity: 0;
-  }
-  
-  
-  .LandingPage h1 {
-    font-weight: 900;
-    font-size: 5rem;
-    color: #fff;
-
-    
-    /* transform: translate(-50%, -50%); */
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    background-color: transparent;
-    border-radius: 5px;
-    padding: 25px 25px;
-  }
-  
-  .LandingPage h2 {
-    font-weight: 750;
-    font-size: 3rem;
-    color: #fff;
-    padding: 25px 10px;
-    background-color: transparent;
-    /* transform: translate(-50%, -50%); */
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    border-radius: 5px;
-
-}
-  
-
-
-.About{
-    width: 100%;
-    height: 100%;
-    padding-top: 100px;
-    display: flex;
-    flex-direction: row;
-    
-    background-size:cover ;
-    
-}
-
-/* background-color: #D2E59E; I like this color
-    keep it in mind
-*/
-.About h1{
-    font-weight: 900;
-    font-size: 2rem;
-    background-color: inherit;
-    margin-left: 50px;
-}
-
-.About-Container{
- background-color: inherit;
-    padding-top: 150px;
-    margin-right: 250px;
-    padding: 150px 0;
-}
-.About h2{
-    font-size: 3rem;
-    font-weight: 900;
-    margin-bottom: 33px;
-    background-color: inherit;
-}
-
-.About p{
-    background-color: inherit;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    
-}
-
-.About img{
-    flex: 0 0 200px;
-    width: 50%;
-    float: left;
-    margin: 1rem;
-    border-radius: 50px;
-
-    
-}
-
-    
-    /*change the number below to scale to the appropriate size*/ 
-
-
-.Skills{
-    height: 100%;
-    text-align: center;
-    justify-content: center;
-    padding: 100px 50px;
-    display: flex;
-    background-color: #04052E;
-}
-
-.Skills-list{
-    background-color: #04052E;
-    display: flex;
-    flex-direction: column; /* Display flex items in column */
-    align-items: center; /* Center flex items vertically */
-}
-
-.Skills h1{
-    background-color: inherit;
-    font-size: 2rem;
-    font-weight: 900;
-    padding-bottom: 50px;
-}
-
-.Skills ul{
-    background-color: inherit;
-    list-style: none;
-}
-
-.Skills li{
-    background-color: inherit;
-    font-size: 1rem;
-    padding: 0 80px; /* Add horizontal padding to create space between columns */
-}
-
-.Skills li img{
-    background-color: white;
-    height: 250px;
-    width: 250px;
-    border-radius: 30px;
-    transition: all 0.2s ease-in-out; /* add a transition effect for a smoother animation */
-
-}
-
-.Skills img:hover { 
-    transform: scale(1.1); /* increase the size of the image when hovered over */
-    cursor: pointer; /* change the cursor to a pointer to indicate that it's clickable */
-  
-}
-
-.skill-title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 50px 0; /* Add margin to create space between rows */
-}
-
-.skills-images{
-    list-style: none;
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap; /* Allow images to wrap to a new row if needed */
-    justify-content: center; /* Center the images horizontally */
-}
-
-
-
-
-
-
-
-
-/* NavBar Sticky  */
-
-.content {
-    padding: 16px;
-}
-
-.sticky {
-    position: fixed;
-    top:0;
-    width: 100%;
-}
-
-
-.sticky + .content {
-    padding-top: 60px;
-}
-
-
 /* Projects Section */
 
 .Projects{
@@ -272,6 +13,7 @@ html{scroll-behavior: smooth;}
     align-items: flex-start;
     padding: 100px 100px;
     display: flex;
+    color: white;
 }
 
 .Projects h1{
@@ -372,12 +114,15 @@ html{scroll-behavior: smooth;}
 .Contact h1 {
     font-size: 60px;
     font-weight: 800;
+    color: white;
     background-color: inherit;
 }
 
 .Contact h2{
     background-color: inherit;
     padding-top: 100px;
+    color: white;
+
     font-size: 40px;
     font-weight: 800;
 }
@@ -388,7 +133,7 @@ html{scroll-behavior: smooth;}
     list-style: none;
     width: 100%;
     padding: 10px;
-    justify-content: left;
+    justify-content: center;
     padding-bottom: 400px;
     padding-top: 150px;
 }
